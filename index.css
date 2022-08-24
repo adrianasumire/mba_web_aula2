@@ -1,0 +1,116 @@
+@media only screen and (max-width: 768px) {
+    div.entrada {
+        width: 90%;
+    }
+
+    div.entrada h1:first-child {
+        width: calc(100% + 20px);
+    }    
+}
+
+@media only screen and (min-width: 769px) {
+    div.entrada {
+        width: 400px;
+    }
+
+    div.entrada 
+    h1:first-child {
+        width: calc(400px + 20px);
+    }    
+}
+
+div.entrada
+    h1:first-child {
+    background-color: #990000;
+    font-size: 1.2em;
+    text-align: center;
+    color: #fff;
+    left: -10px;
+    position: relative;
+}
+
+div.entrada
+    h1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -10px;
+    border: solid;
+    border-width: 5px;
+    border-color: transparent #7c0000 #7c0000 transparent;
+}
+
+@media only screen and (max-width: 768px) {
+    div.resultado {
+        width: 90%;
+    }
+
+    div.resultado h1:first-child {
+        width: calc(100% + 20px);
+    }    
+}
+
+@media only screen and (min-width: 769px) {
+    div.resultado {
+        width: 400px;
+    }
+
+    div.resultado 
+    h1:first-child {
+        width: calc(400px + 20px);
+    }    
+}
+
+
+div.resultado
+    h1:first-child {
+    background-color: #990000;
+    font-size: 1.2em;
+    text-align: center;
+    color: #fff;
+    left: -10px;
+    position: relative;
+}
+
+
+div.resultado
+    h1::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: -10px;
+    border: solid;
+    border-width: 5px;
+    border-color: transparent #7c0000 #7c0000 transparent;
+}
+
+
+
+
+div.entrada, div.resultado {
+    border: 1px solid #000;
+    min-height: 100px;
+    margin: 40px auto;
+}
+
+div.entrada-content,div.resultado-content {
+    margin: 10px;
+}
+
+
+.resultado { display: none; }
+
+
+
+
+div button {
+    border-radius: 5px;
+    position: relative;
+    margin: 10px;
+}
+
+div input {
+    border-radius: 5px;
+    position: relative;
+    margin: 10px;
+}

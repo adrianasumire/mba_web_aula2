@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calcule seu IMC</title>
+    <link href="index.css" rel="stylesheet" />
+</head>
+<body>
+
+    <div class="entrada" id="entrada">
+        <h1>Calcule seu IMC</h1>
+        <div class="entrada-content">
+            <label for="peso">Peso: </label>
+            <input type="number" name="peso" id="peso" class="form-control" placeholder="Peso em kg">
+            <br><br>
+            <label for="altura">Altura: </label>
+            <input type="number" name="altura" id="altura" class="form-control" placeholder="Altura em cm">
+        </div>
+        <button type="button" id="botaoCalcular" >Calcular</button>
+    </div>
+
+    
+
+    <div class="resultado" id="resultado">
+        <h1>Seu IMC</h1>
+        <div class="resultado-content">
+            <p id="imc"></p>
+        </div>
+        <button type="button" id="botaoCalcularNovamente" onclick="Mudarestado('resultado','entrada')">Calcular novamente</button>
+    </div>
+    
+    <script lang="text/javascript" src="index.js"></script>
+</body>
+</html>
